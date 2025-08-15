@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // empty object
+        let obj1={};
+        const user={
+            name:"abhishek",
+            address:{
+                city:"varanasi",
+                pin:221001,
+                location:{
+                    lat:22.22,
+                    lng:22.45,
+                },
+            },
+        };
+        // object destructring
+        let{lat,lng}=user.address.location;
+        // object.keys-> give array in the form of keys
+        // spread operator in obj....
+        let obj2={...user};
+        // deep cloning...... do real copy 
+        // convert object into string
+        //JSON.stringify(user);
+        obj2=JSON.parse(JSON.stringify(user));// deep copy
+        // optional chaining..
+        user?.address?.city;
+        // computed properties....
+        
+
+
+
+
+    </script>
+</body>
+</html>

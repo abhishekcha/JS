@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let stu=[
+            {rn:1,name:"shruti",age:25},
+            {rn:2,name:"anjali",age:26},
+            {rn:3,name:"vandna",age:27},
+            {rn:4,name:"sweta",age:28},
+        ];
+        let getrollno=()=>{
+            setTimeout(() => {
+                let rollno=stu.map(s=>s.rn);
+                console.log(rollno);
+                setTimeout((rnn) => {
+                    let fstu=stu.find(s=>s.rn===rnn);
+                    console.log(fstu);
+                    setTimeout((obj)=>{
+                        console.log(`first student name is ${obj.name} and age is ${obj.age}`);
+                    },3000,fstu);
+                },3000,rollno[0]);
+            },3000);
+        }
+        getrollno();
+    </script>
+</body>
+</html>

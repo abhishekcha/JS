@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body> 
+    <script>
+      // sorting
+      let arr = [2, 1, 4, 3, 6, 5];
+      let sarr = arr.sort(function (a, b) {
+        return b - a;
+      });
+      // for each -> run a function for each value
+      // for each----
+      arr.forEach(function (val) {
+        console.log(val + 1);
+      });
+      //map.............
+      // map-> make a new array based on old array and return....
+      let newarr = arr.map(function () {
+        return 12;
+      });
+      // for map ->if there is no return then there is undefined..
+
+      // filter()...
+      // filter is used for filtering the array based on condition...
+
+      let x=arr.filter(function (a) {
+        if (a > 2) {
+          return true;
+        }
+      });
+      // reduce()....-> return single value at the end.
+      let ans=arr.reduce(function(acc,val){
+        return acc+val;
+      },0);
+      // find()...-> used for search in array
+      // some()--->check every value of array and return true or false based on condition
+      // every()---> check every value and it must be all checkable.
+      //slice() always give new array..
+      // splice()-> remove the original value from array and return new array
+
+    </script>
+  </body>
+</html>

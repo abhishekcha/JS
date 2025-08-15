@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // call()...................
+        let obj={
+            name:"shruti",
+            age:27,
+        };
+        function ab(){
+            console.log(this.age);    
+        }
+        ab.call(obj);// using call() method you bind this to passing object.
+        //.......................................................................
+        //apply(only 2 parameter)
+        let obj1={
+            name:"shruti shukla",
+            age:27,
+        };
+        function abc(x,y,z){
+            console.log(this,x,y,z);    
+        }
+        abc.apply(obj,[1,3,5]);// take only 2 ARGUMENTS..
+        //.........................................................
+        // bind()-> give new function..
+        //usecase->
+        // ques
+        let a=1;
+        if(a!=null){
+            console.log(1);
+            
+        }
+        
+    </script>
+</body>
+</html>

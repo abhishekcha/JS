@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function abcd(...val) {
+            console.log(val);// print int the form of arry
+            
+        }
+        abcd(1,2,3,4,5);
+        // first class function....
+        // treat function like value... known first class function 
+        // higher order function=> if function return function
+        // => accept a function in parameter
+        // eg-
+        function abcd(){
+            return function name(params) {
+                
+            }
+        }
+///////////////////////////////////////////////////////
+        // what is closures..
+        function abcd(params) {
+            let a=25;
+            return function name(params) {
+                console.log(a);
+                
+            }
+        }
+        // means a function return a 
+        // function and use a variable of parent function..  
+//////////////////////////////////
+        // iife(imediaitely invocked function expression)
+        (function name(params) {
+            console.log("i am ahacker");
+            
+        })();
+    </script>
+</body>
+</html>

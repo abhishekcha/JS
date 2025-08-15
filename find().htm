@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // find() give all value of what you find..
+        //findIndex() give index of finding value..
+        var student=[
+            {id:100,name:"abhi",age:20},
+            {id:101,name:"vandna",age:23},
+            {id:102,name:"sweta",age:25},
+            {id:103,name:"abhi",age:26},
+            {id:104,name:"shruti",age:27},
+        ]
+        var res=student.find(val=>val.name==="abhi");
+        console.log(res);
+        var res1=student.findIndex(val=>val.name==="shruti")
+        console.log(res1);
+        //alternate
+        // var r=student.find((val)=>{
+        //     return val.name==="abhi";
+        // })
+        // console.log(r);
+        
+        // var marks=[54,85,56,95,100];
+        // var res3=marks.every((v,i,arr)=>v>=10);
+        // console.log(res3);
+        // return true or false if all no is >=10;
+        // ...................................................
+        var marks=[54,85,56,95,100];
+        console.log(marks.includes(100));// return true if value is present
+        console.log(marks.includes(1001));
+        marks.fill(1);// fill array with 1....
+        console.log(marks);   
+    </script>
+</body>
+</html>
